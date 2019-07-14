@@ -1,0 +1,60 @@
+@import url('fonts.css');
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../assets/images/stamp-background.png') center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Roboto-Regular';
+  min-width: 320px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+ul li:hover{
+  color: slategray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mask {
+  background-color: rgba(0,0,0,.8);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  transition: visibility 0s, opacity 0.2s linear;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

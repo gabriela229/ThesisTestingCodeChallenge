@@ -1,0 +1,172 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+  padding: 0 15%;
+  align-items: center;
+  flex: 1;
+  width: 100%
+}
+
+/* HERO COPY */
+.hero-copy {
+  flex: 1;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.hero-copy .heading {
+  font-size: 3em;
+  margin-bottom: 2%;
+}
+
+.hero-copy .sub-text {
+  color: #cfd0d0;
+  line-height: 1.8;
+}
+
+/* SIGN UP FORM */
+.sign-up {
+  flex: 1;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 460px;
+}
+
+.sign-up p {
+  text-align: center;
+}
+
+.sign-up-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.sign-up .sub-text {
+  color: rgba(255,255,255,.70);
+  line-height: 1.8;
+}
+
+.sign-up .sub-text span {
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid rgba(255,255,255,.30);
+  border-radius: 2px 2px 0 0;
+  height: 100%;
+  max-height: 242px;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+}
+
+form input {
+  background: none;
+  border-right: 2px solid rgba(255,255,255,.30);
+  border-left: 2px solid rgba(255,255,255,.30);
+  border-bottom: 1px solid rgba(255,255,255,.30);
+  border-top: none;
+  background-color: rgba(255,255,255,.05);
+  flex: 1;
+  min-height: 40px;
+  color: white;
+  padding-left: 10px;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+form input:last-of-type {
+  border-bottom: none;
+}
+
+form input::placeholder {
+  color: rgba(255,255,255,.70);
+  text-transform: capitalize;
+}
+
+form .password-toggle-icon {
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+}
+
+form .password-toggle-icon:hover .icon-fill {
+  fill: white;
+}
+
+form button {
+  background: #2C99ED;
+  color: white;
+  border: none;
+  border-radius: 0 0 2px 2px;
+  flex: 1;
+  min-height: 40px;
+  margin: 0;
+}
+
+form button:hover {
+  background: slategray;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 738px) {
+  main {
+    flex-direction: row;
+    padding: 0 5%;
+  }
+
+  .hero-copy {
+    padding: 0 4%;
+  }
+
+  .hero-copy .sub-text {
+    font-size: 1.1em;
+  }
+
+  .sign-up {
+    padding: 0 4%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    padding: 0 6%;
+  }
+
+  .hero-copy {
+    padding: 0 5%;
+  }
+
+  .hero-copy .sub-text {
+    font-size: 1.4em;
+  }
+
+  .sign-up {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (min-width: 816px) {
+  .hero-copy .heading {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 1095px) {
+  .hero-copy .heading {
+    font-size: 5em;
+  }
+}
